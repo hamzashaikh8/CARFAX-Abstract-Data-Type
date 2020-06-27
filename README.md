@@ -11,8 +11,7 @@ constant in size or might grow and/or shrink dynamically.
 The CVR implements the following methods:
 
 • setThreshold(Threshold): where 100 ≤ Threshold ≤ ~900,000 is an integer number
-that defines when a listing should be implemented with a data structure such as a Tree,
-Hash Table, AVL tree, binary tree, if its size is greater than or equal to value of
+that defines when a listing should be implemented with a NavigableMap Data Structure if its size is greater than or equal to value of
 Threshold. Otherwise it is implemented as a Sequence.
 
 • setKeyLength(Length): where 10 ≤ Length ≤ 17 is an integer number that defines the
