@@ -9,20 +9,29 @@ elements or more), it might have a higher memory requirement but faster (sorting
 constant in size or might grow and/or shrink dynamically. 
 
 The CVR implements the following methods:
+
 • setThreshold(Threshold): where 100 ≤ Threshold ≤ ~900,000 is an integer number
 that defines when a listing should be implemented with a data structure such as a Tree,
 Hash Table, AVL tree, binary tree, if its size is greater than or equal to value of
 Threshold. Otherwise it is implemented as a Sequence.
+
 • setKeyLength(Length): where 10 ≤ Length ≤ 17 is an integer number that defines the
 fixed string length of keys.
+
 • generate(n): randomly generates a sequence containing n new non-existing keys of
 alphanumeric characters.
+
 • allKeys(): return all keys as a sorted sequence (lexicographic order)
-• add(key,value2
-): add an entry for the given key and value
+
+• add(key,value2): add an entry for the given key and value
+
 • remove(key): remove the entry for the given key
+
 • getValues(key): return the values of the given key
+
 • nextKey(key): return the key for the successor of key.
+
 • prevKey(key): return the key for the predecessor of key
+
 • prevAccids(key): returns a sequence (sorted in reverse chronological order) of accidents(previously) registered
 with the given key (dates).
